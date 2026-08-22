@@ -14,3 +14,8 @@ Descarga el directorio del proyecto NVIM completo en:
 cd ~/home/.config/
 git clone git@github.com:Uranior/NeoVim.git
 ```
+
+
+How it looks like:
+
+<img width="948" height="692" alt="image" src="https://github.com/user-attachments/assets/cd685d8e-dade-4c8b-be7c-be342a8de618" />
