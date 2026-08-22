@@ -12,5 +12,5 @@ brew install ripgrep
 Descarga el directorio del proyecto NVIM completo en:
 ```bash
 cd ~/home/.config/
-git clone git@github.com:Uranior/Terminals.git
+git clone git@github.com:Uranior/NeoVim.git
 ```
