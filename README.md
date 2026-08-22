@@ -18,8 +18,8 @@ git clone git@github.com:Uranior/NeoVim.git
 # Plugin: Telescope
 Accesos rapidos de teclado:
 ```bash
-SPACE + f + f --> Buscamos nombres de archivos.
-SPACE + f + g --> Buscamos contenido dentro de ficheros (Grep).
+SPACE + f + f    # Buscamos nombres de archivos.
+SPACE + f + g    # Buscamos contenido dentro de ficheros (Grep).
 ```
 
 How it looks like:
