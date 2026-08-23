@@ -3,12 +3,12 @@
 brew install neovim
 ```
 
-# Instalaciones de complementos:
+# Also installed:
 ```bash
 brew install ripgrep
 ```
 
-# Full config de NeoVim + NVChad
+# Full config: NeoVim + NVChad
 Descarga el directorio del proyecto NVIM completo en:
 ```bash
 cd ~/home/.config/
@@ -16,10 +16,10 @@ git clone git@github.com:Uranior/NeoVim.git
 ```
 
 # Plugin: Telescope
-Accesos rapidos de teclado:
+Key bindings:
 ```bash
-SPACE + f + f    # Buscamos nombres de archivos.
-SPACE + f + g    # Buscamos contenido dentro de ficheros (Grep).
+SPACE + f + f    # Search file names.
+SPACE + f + g    # Search file contents (Grep).
 ```
 
 How it looks like:
