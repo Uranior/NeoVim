@@ -2,16 +2,40 @@ return {
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {
-    -- Configuración estándar
+    -- Configuración estándar de la interfaz
   },
   config = function(_, opts)
     local wk = require("which-key")
     wk.setup(opts)
 
-    -- Registrar los nombres de los grupos de forma explícita
+    -- Registrar los nombres y descripciones de todos los grupos y teclas
     wk.add({
-      { "<leader>f", group = "Buscar (Telescope)" },
+      -- Atajos principales individuales
+      { "<leader>w", desc = "Guardar archivo" },
+      { "<leader>q", desc = "Cerrar pestaña actual" },
+      { "<leader>u", desc = "Historial de cambios (Undotree)" },
+      { "<leader>e", desc = "Abrir / Enfocar explorador (NvimTree)" },
+
+      -- Grupos de herramientas
+      { "<leader>f", group = "Telescope (Buscador)" },
+      { "<leader>ff", desc = "Buscar archivos" },
+      { "<leader>fg", desc = "Buscar texto (Live Grep)" },
+      { "<leader>fb", desc = "Buscar en buffers abiertos" },
+      { "<leader>fh", desc = "Buscar en la ayuda" },
+      { "<leader>fw", desc = "Buscar palabra bajo el cursor" },
+      { "<leader>fz", desc = "Buscar texto en archivo actual" },
+
       { "<leader>h", group = "Git (Gitsigns)" },
+      { "<leader>hp", desc = "Previsualizar cambio (Hunk)" },
+      { "<leader>hb", desc = "Ver autor de línea (Git Blame)" },
+
+      { "<leader>b", group = "Pestañas / Buffers" },
+      { "<leader>c", group = "Código / LSP" },
+      { "<leader>d", group = "Diagnósticos / Errores" },
+      { "<leader>g", group = "Git" },
+      { "<leader>m", group = "Formato" },
+      { "<leader>p", group = "Plugins (Lazy)" },
+      { "<leader>t", group = "Terminal / Pestañas" },
     })
   end,
 }
