@@ -1,15 +1,16 @@
 return {
   "nvim-telescope/telescope.nvim",
-  -- Hemos quitado 'tag = 0.1.8' para usar la rama principal compatible
   dependencies = { "nvim-lua/plenary.nvim" },
-  config = function()
-    local builtin = require("telescope.builtin")
-    local map = vim.keymap.set
-
-    map("n", "<leader>ff", builtin.find_files, { desc = "Buscar archivos" })
-    map("n", "<leader>fg", builtin.live_grep, { desc = "Buscar texto (Grep)" })
-    map("n", "<leader>fb", builtin.buffers, { desc = "Buscar en buffers abiertos" })
-    map("n", "<leader>fh", builtin.help_tags, { desc = "Buscar en la ayuda" })
-    map("n", "<leader>fw", builtin.grep_string, { desc = "Buscar palabra bajo el cursor" })
+  keys = {
+    { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Buscar archivos" },
+    { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Buscar texto (Live Grep)" },
+    { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Buscar buffers abiertos" },
+    { "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "Buscar ayuda" },
+    { "<leader>fw", "<cmd>Telescope grep_string<CR>", desc = "Buscar palabra bajo cursor" },
+    { "<leader>fz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", desc = "Buscar en archivo actual" },
+  },
+  config = function(_, opts)
+    local telescope = require("telescope")
+    telescope.setup(opts)
   end,
 }
