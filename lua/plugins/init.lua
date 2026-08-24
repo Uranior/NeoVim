@@ -20,7 +20,7 @@ return {
       default_opts.view = default_opts.view or {}
       default_opts.view.width = {
         min = 35,
-        max = 60,
+        max = 75,
       }
       return default_opts
     end,
