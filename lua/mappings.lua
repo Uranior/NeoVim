@@ -10,10 +10,18 @@ map("i", "jk", "<ESC>")
 -- Guardar archivo con Espacio + w
 map("n", "<leader>w", "<cmd>w<CR>", { desc = "Guardar archivo" })
 
--- Abrir terminal flotante superpuesta en el directorio actual
+-- Abrir terminal flotante superpuesta en la carpeta del archivo actual
 map({ "n", "t" }, "<leader>tf", function()
-  require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
-end, { desc = "Terminal flotante (Ruta actual)" })
+  -- Obtiene el directorio contenedor del archivo abierto
+  local current_dir = vim.fn.expand("%:p:h")
+  
+-- Abre la terminal pasándole esa ruta como directorio de trabajo
+  require("nvchad.term").toggle { 
+    pos = "float", 
+    id = "currentFileTerm",
+    cmd = "cd " .. vim.fn.fnameescape(current_dir) .. " && zsh"
+  }
+end, { desc = "Terminal flotante en carpeta del archivo" })
 
 -- Cerrar pestaña activa sin usar TbKillBuf (evita error E5108/E516)
 map("n", "<leader>q", function()
