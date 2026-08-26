@@ -38,7 +38,7 @@ end, { desc = "Cerrar pestaña actual" })
 
 -- GitLogDiff (Dentro del grupo <leader>g)
 map("n", "<leader>gl", "<cmd>GitLogDiff<CR>", { desc = "Ver Git Log & Diff" })
-map("n", "<leader>gc", "<cmd>GitLogDiffClose<CR>", { desc = "Cerrar Git Log & Diff" })
+map("n", "<leader>gc", "<cmd>DiffviewClose<CR>", { desc = "Cerrar Git Log & Diff" })
 -- Atajos opcionales para usar Diffview de forma independiente
 map("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", { desc = "Abrir Diffview (Estado actual)" })
 map("n", "<leader>gx", "<cmd>DiffviewClose<CR>", { desc = "Cerrar Diffview" })
