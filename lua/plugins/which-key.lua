@@ -39,6 +39,8 @@ return {
       { "<leader>g", group = "Git" },
       { "<leader>gl", desc = "Ver Git Log & Diff" },
       { "<leader>gc", desc = "Cerrar Git Log & Diff" },
+      { "<leader>gd", desc = "Abrir Diffview" },
+      { "<leader>gx", desc = "Cerrar Diffview" },
     })
   end,
 }
