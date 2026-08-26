@@ -1,5 +1,5 @@
 return {
-  -- Plugin principal de visualización de diffs (Dependencia requerida)
+  -- Plugin principal de visualización de diffs
   {
     "sindrets/diffview.nvim",
     cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles" },
@@ -8,7 +8,7 @@ return {
   -- Plugin para el historial de logs de Git
   {
     "Salanoid/gitlogdiff.nvim",
-    cmd = { "GitLogDiff", "GitLogDiffClose" },
+    cmd = { "GitLogDiff" },
     dependencies = {
       "sindrets/diffview.nvim",
     },
