@@ -26,16 +26,12 @@ return {
     end,
   },
 
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
+  {
+    "Salanoid/gitlogdiff.nvim",
+    cmd = { "GitLogDiff", "GitLogDiffClose" },
+    config = function()
+      require("gitlogdiff").setup()
+    end,
+  },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
 }

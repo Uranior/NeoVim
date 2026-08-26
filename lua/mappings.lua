@@ -35,6 +35,11 @@ map("n", "<leader>q", function()
   end
 end, { desc = "Cerrar pestaña actual" })
 
+
+-- GitLogDiff (Dentro del grupo <leader>g)
+map("n", "<leader>gl", "<cmd>GitLogDiff<CR>", { desc = "Ver Git Log & Diff" })
+map("n", "<leader>gc", "<cmd>GitLogDiffClose<CR>", { desc = "Cerrar Git Log & Diff" })
+
 -- Desactivar accesos directos por defecto de la terminal integrada
 vim.keymap.del("n", "<leader>v")
 vim.keymap.del("n", "<leader>h")

@@ -32,10 +32,13 @@ return {
       { "<leader>b", group = "Pestañas / Buffers" },
       { "<leader>c", group = "Código / LSP" },
       { "<leader>d", group = "Diagnósticos / Errores" },
-      { "<leader>g", group = "Git" },
       { "<leader>m", group = "Formato" },
       { "<leader>p", group = "Plugins (Lazy)" },
       { "<leader>t", group = "Terminal / Pestañas" },
+      -- Grupo Git
+      { "<leader>g", group = "Git" },
+      { "<leader>gl", desc = "Ver Git Log & Diff" },
+      { "<leader>gc", desc = "Cerrar Git Log & Diff" },
     })
   end,
 }
