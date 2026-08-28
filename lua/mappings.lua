@@ -35,6 +35,13 @@ map("n", "<leader>q", function()
   end
 end, { desc = "Cerrar pestaña actual" })
 
+-- ==========================================
+-- Spotify (Control de música)
+-- ==========================================
+map("n", "<leader>so", "<cmd>Spotify<CR>", { desc = "Spotify Panel" })
+map("n", "<leader>st", "<cmd>SpotifyPlayPause<CR>", { desc = "Play / Pause" })
+map("n", "<leader>sn", "<cmd>SpotifyNext<CR>", { desc = "Siguiente" })
+map("n", "<leader>sp", "<cmd>SpotifyPrev<CR>", { desc = "Anterior" })
 
 -- GitLogDiff (Dentro del grupo <leader>g)
 map("n", "<leader>gl", "<cmd>GitLogDiff<CR>", { desc = "Ver Git Log & Diff" })
