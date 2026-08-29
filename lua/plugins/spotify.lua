@@ -1,7 +1,6 @@
 return {
   "spinalshock/spotify.nvim",
   cmd = {
-    "Spotify",
     "SpotifyPlayPause",
     "SpotifyNext",
     "SpotifyPrev",

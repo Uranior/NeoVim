@@ -43,7 +43,6 @@ return {
       { "<leader>gx", desc = "Cerrar Diffview" },
       -- Grupo Spotify
       { "<leader>s", group = "Spotify" },
-      { "<leader>so", desc = "Abrir panel Spotify" },
       { "<leader>st", desc = "Play / Pausa" },
       { "<leader>sn", desc = "Siguiente canción" },
       { "<leader>sp", desc = "Canción anterior" },
