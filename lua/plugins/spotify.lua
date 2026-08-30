@@ -1,14 +1,13 @@
 return {
-  "spinalshock/spotify.nvim",
+  dir = vim.fn.stdpath("config") .. "/lua/plugins/spotify.nvim",
+  name = "spotify",
   cmd = {
     "SpotifyPlayPause",
     "SpotifyNext",
     "SpotifyPrev",
-    "SpotifyDevices",
   },
   config = function()
     require("spotify").setup {
-      -- Configuración por defecto del plugin
       status_format = "%artist - %title",
     }
   end,
