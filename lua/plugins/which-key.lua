@@ -24,6 +24,7 @@ return {
       { "<leader>fh", desc = "Buscar en la ayuda" },
       { "<leader>fw", desc = "Buscar palabra bajo el cursor" },
       { "<leader>fz", desc = "Buscar texto en archivo actual" },
+      { "<leader>a", desc = "Alternar esquema del código (Aerial)" },
 
       { "<leader>h", group = "Git (Gitsigns)" },
       { "<leader>hp", desc = "Previsualizar cambio (Hunk)" },
