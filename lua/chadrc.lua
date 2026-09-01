@@ -14,6 +14,12 @@ M.base46 = {
 	-- },
 }
 
+-- Desactivar el dashboard nativo de NvChad para evitar solapamientos
+M.nvdash = {
+  load_on_startup = false,
+}
+
+-- Posicionamiento de Terminal Flotante
 M.term = {
   float = {
     relative = "editor",
