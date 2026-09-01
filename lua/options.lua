@@ -3,6 +3,10 @@ require "nvchad.options"
 -- add yours here!
 vim.g.mapleader = " "
 
+-- Plugin: CmdLine --> Actiba el buffer de busqueda de /
+vim.opt.incsearch = true -- Resalta coincidencias dinámicamente al escribir
+vim.opt.hlsearch = true  -- Resalta todas las coincidencias
+
 -- Reconocimiento dinámico de plantillas Jinja2 según el servicio
 vim.filetype.add({
   extension = {
