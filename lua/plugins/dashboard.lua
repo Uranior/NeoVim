@@ -6,7 +6,7 @@ return {
     theme = "hyper",
     config = {
       week_header = {
-        enable = true, -- Muestra la fecha y el día actual en la cabecera
+        enable = true,
       },
       shortcut = {
         {
